@@ -1,0 +1,82 @@
+body{
+  font-size: 14pt;
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: center;
+}
+
+#welcome, #instructions{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+}
+
+#instructions{
+  display: none;
+  z-index: 3;
+}
+
+#instrucitonimg{
+  width: 900px;
+  height: 420px;
+}
+
+.headerlabel{
+  font-weight: bold;
+  margin: 3em;
+}
+
+.emphasis{
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #8B0000;
+}
+
+#demoform div{
+  padding-left: 1em;
+}
+
+#demoform label input{
+  text-align:right;
+}
+
+#demoform *{
+  margin: 0.5em;
+  text-align: left;
+}
+
+#demoform{
+  position: relative;
+  width: 50%;
+  margin: 2em;
+  left: 25%;
+}
+
+#puzzlearea{
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+#puzzlearea div{
+  width: 90px;
+  height: 90px;
+  line-height: 110px;
+  position: absolute;
+  border: 5px solid black;
+  background-color: white;
+  font-size: 40pt;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: top 0.3s, left 0.3s;
+}
+
+#puzzlearea .moveable:hover{
+  cursor: pointer;
+  border-color: red;
+  color: red;
+}

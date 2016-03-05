@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>8 Puzzle</title>
+		<link href="puzzle.css" type="text/css" rel="stylesheet" />
+		<script src="puzzle.js" type="text/javascript"></script>
+		<script src="metrics.js" type="text/javascript"></script>
+		<script src="ai.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="welcome">
+			<h1>Welcome</h1>
+			<p>
+				Thank you for participating in this study!<br/>
+				Please answer the questions below.
+			</p>
+			<div id="demoform">
+				<form>
+					<label class="headerlabel">Gender</label> 
+					<div>
+						<label><input type="radio" name="gender" value="male">Male</label><br/>
+						<label><input type="radio" name="gender" value="female">Female</label><br/>
+						<label><input type="radio" name="gender" value="other">Other</label><br/>
+					</div>
+					<label class="headerlabel">Age</label>
+					<div><input type="number" name="age" id="age"></div>
+					<label class="headerlabel">Major (if applicable)</label>
+					<div><input type="text" name="major" id="major"></div>
+				</form>
+				<button id="continuebutton">Continue</button>
+			</div>
+		</div>
+		<div id="instructions">
+			<h1>Instructions</h1>
+			<p id="tasktext">
+				When you are ready, you will be presented with a scrambled puzzle.<br/>
+				Your goal is to put the numbers back in order
+			</p>
+			<img id="instrucitonimg" src="puzzle_instructions.png"/>
+			<p>
+				To move a tile into the empty space, simply click on it.
+			</p>
+			<button id="readybutton">I'm Ready</button>
+		</div>
+		<div id="puzzlearea"></div>
+<!-- 		<p id="controls">
+			<button id="stepbutton">Step</button>
+			<button id="savebutton">Save</button>
+		</p> -->
+		<div id="output"></div>
+	</body>
+</html>
