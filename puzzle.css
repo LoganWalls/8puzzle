@@ -23,6 +23,15 @@ body{
   height: 420px;
 }
 
+#readybutton{
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+button{
+  cursor: pointer;
+}
+
 .headerlabel{
   font-weight: bold;
   margin: 3em;
